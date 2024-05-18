@@ -1,0 +1,28 @@
+
+<head>
+  <link rel="stylesheet" href="cart.component.css">
+</head>
+<div class="items-container">
+     <h2>Available Items</h2>
+     <ul>
+       <li *ngFor="let item of items">
+         {{ item.name }} - ${{ item.price }}
+         <button (click)="addItemToCart(item)">Add to Cart</button>
+       </li>
+     </ul>
+   </div>
+   
+   <div class="cart-container" *ngIf="selectedItems.length > 0">
+     <h2>Shopping Cart</h2>
+     <ul>
+       <li *ngFor="let selectedItem of selectedItems">
+         {{ selectedItem.name }} - ${{ selectedItem.price }}
+         <button (click)="removeItemFromCart(selectedItem)">Remove from Cart</button>
+       </li>
+     </ul>
+   </div>
+   
+   <div *ngIf="selectedItems.length === 0">
+     <p>No items selected.</p>
+   </div>
+   

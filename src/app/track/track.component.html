@@ -1,0 +1,24 @@
+<p>Tracking Order </p>
+<div id="m_map" ></div>
+<br>
+<div>
+<b>Start:</b>
+<input id="m_start" type="text">
+<b>End:</b>
+<input id="m_end" type="text">
+<button (click)="calculateAndDisplayRoute()">Get Route</button>
+</div>
+<div>
+  <b>Distance:</b>
+  " {{ distance }} "
+</div>
+<div>
+  <b>Duration:</b>
+  " {{ duration }} "
+</div>
+<div class="m_popup">
+  <div class="m_popup-content">
+    <h2>Your Order has been delivered</h2>
+    <button>Close</button>
+  </div>
+</div>

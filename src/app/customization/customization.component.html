@@ -1,0 +1,29 @@
+<h2>Cake Customization</h2>
+
+<div class="size">
+  <h3>Size</h3>
+  <select [(ngModel)]="selectedSize" (ngModelChange)="selectSize($event)">
+    <option *ngFor="let size of sizes">{{ size }}</option>
+  </select>
+</div>
+
+<div class="ingredients">
+  <h3>Ingredients</h3>
+  <ul>
+    <li *ngFor="let ingredient of ingredients">
+      <input type="checkbox" [(ngModel)]="ingredient.selected" (change)="selectIngredient(ingredient)">
+      {{ ingredient.name }}
+    </li>
+  </ul>
+</div>
+
+<div class="designs">
+  <h3>Design</h3>
+  <div *ngFor="let design of designs">
+    <img (click)="selectDesign(design)" src="{{ design.image }}" *ngIf="!design.selected" class="design-preview">
+    <img src="{{ design.image }}" *ngIf="design.selected" class="design-selected">
+  </div>
+</div>
+
+   
+<button>Add to Cart</button>

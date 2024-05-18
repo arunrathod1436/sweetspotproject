@@ -1,0 +1,14 @@
+.size, .ingredients, .designs {
+     margin-bottom: 20px;
+   }
+   
+   .designs img {
+     width: 100px;
+     margin: 5px;
+     cursor: pointer;
+   }
+   
+   .design-selected {
+     border: 2px solid green;
+   }
+   

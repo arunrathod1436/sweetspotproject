@@ -1,0 +1,62 @@
+<p>tracking order </p>
+
+<head> <link rel="stylesheet" href="newtrack.component.css">
+    
+          <div class="header">
+               <h1> Your Order Has Been Delivered! </h1>
+          </div>
+    
+</head>
+<body>
+<center>
+<div id="map" style="height: 400px;"></div>
+<br>
+<div>
+    <b>Start:</b>
+    <input id="start" type="text">
+    <b>End:</b>
+    <input id="end" type="text">
+    <button (click)="calculateAndDisplayRoute()">Get Route</button>
+</div>
+
+
+<div *ngIf="!error">
+    <b>Distance:</b> {{ distance }}
+</div>
+<div *ngIf="!error">
+    <b>Duration:</b> {{ duration }}
+</div>
+
+<!-- <div class="popup" *ngIf="isPopupVisible"> -->
+<div class="popup">
+    <div class="popup-content">
+      <h2>Your Order Has Been Delivered!</h2>
+      <button (click)="closePopup()">Close</button>
+    </div>
+  </div>
+
+  </center>
+  <div class="footerr">
+    <footer>
+         <div class="contact-info">
+           <h3>Contact Us</h3>
+           <p>Email: arunrathod1436.com</p>
+           <p>Phone: 8459286898</p>
+         </div>
+         <div class="location">
+           <h3>India</h3>
+           <p>Hanuman Nagar,N-4</p>
+           <p>Sambhajinagar,MH, 431001</p>
+         </div>
+         <div class="social-media">
+           <h3>Follow Us</h3>
+           <ul>
+             <li><a href="#">Facebook</a></li>
+             <li><a href="#">LinkedIn</a></li>
+             <li><a href="#">Instagram</a></li>
+           </ul>
+         </div>
+       </footer>
+      </div>  
+
+  </body>

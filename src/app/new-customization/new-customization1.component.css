@@ -1,0 +1,81 @@
+.image-container {
+     display: flex;
+     justify-content: space-around; /* This will space your images evenly */
+   }
+   .image-container img {
+     width: 100px; /* Adjust the width as needed */
+     height: 100px; /* This will maintain the aspect ratio */
+     margin-top: 10px;
+     padding: 4px,4px,4px,4px;
+
+   }
+   .header {
+     padding: 50px;
+     
+     text-align: center;
+     background: #eb85b5;
+     color: white;
+     font-size: 30px;
+   } 
+
+
+   footer {
+     background-color: #f4f4f4;
+     padding: 50px;
+     margin-top: 100px;
+     height: 0pxpx;
+     text-align: center;
+     display: flex;
+     justify-content: space-around;
+   }
+   
+   .contact-info,
+   .location,
+   .social-media {
+     flex-basis: 30%;
+   }
+   
+   .contact-info h3,
+   .location h3,
+   .social-media h3 {
+     margin-top: 0;
+   }
+   
+   .social-media ul {
+     padding: 0;
+     margin: 0;
+     list-style: none;
+   }
+   
+   .social-media ul li {
+     margin-bottom: 5px;
+   }
+   
+   .social-media ul li a {
+     text-decoration: none;
+     color: #007bff;
+   }
+   
+   .social-media ul li a:hover {
+     text-decoration: underline;
+   }
+   .footerr{
+     background-position: bottom;
+   }
+
+   .cakes{
+     background-color: aliceblue;
+     margin: 50px,50px,50px,50px;
+   }
+   .pastry{
+     background-color: rgb(153, 198, 238);
+   }
+
+
+
+   #myButton {
+     position: fixed; /* Fixed position */
+     bottom: 10px;   /* Place the button 10px from the bottom */
+     right: 10px;    /* Place the button 10px from the right */
+   }
+   
