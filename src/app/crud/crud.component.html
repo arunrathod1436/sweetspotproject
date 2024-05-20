@@ -1,28 +1,29 @@
-<p>crud works!</p>
-<!-- src/app/crud/crud.component.html -->
+
+
 <head>
   <link rel="stylesheet" href="crud.component.css">
 
   <div class="header">
-    <h1> Your Order Has Been Delivered! </h1>
+    <h1> Sweetspot </h1>
 </div>
-</head
-<div>
-     <h2>CRUD Operations</h2>
-   
-     <div>
-       <h3>Add Item</h3>
+
+<center>
+<div class="crud">
+     
+  
+     <div >
+       <h3>Add Cake</h3>
        <input [(ngModel)]="newItem.name" placeholder="Item Name" />
        <button (click)="addItem()">Add</button>
      </div>
    
      <div *ngIf="currentItem.id">
-       <h3>Edit Item</h3>
+       <h3>Edit Cake</h3>
        <input [(ngModel)]="currentItem.name" placeholder="Item Name" />
        <button (click)="updateItem()">Update</button>
      </div>
    
-     <h3>Items List</h3>
+     <h3>Cake List</h3>
      <ul>
        <li *ngFor="let item of items">
          {{item.name}}
@@ -30,7 +31,9 @@
          <button (click)="deleteItem(item.id)">Delete</button>
        </li>
      </ul>
+     </center>
    </div>
+   
    <div class="footerr">
     <footer>
          <div class="contact-info">
@@ -51,5 +54,7 @@
              <li><a href="#">Instagram</a></li>
            </ul>
          </div>
+         
        </footer>
+       
       </div>  
