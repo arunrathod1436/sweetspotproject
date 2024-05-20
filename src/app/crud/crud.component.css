@@ -1,0 +1,73 @@
+/* src/app/crud/crud.component.css */
+div {
+     margin-bottom: 10px;
+   }
+   
+   input {
+     margin-right: 10px;
+   }
+   
+   button {
+     margin-right: 5px;
+   }
+   
+   ul {
+     list-style-type: none;
+     padding: 0;
+   }
+   
+   li {
+     margin: 5px 0;
+   }
+   footer {
+    background-color: #f4f4f4;
+    padding: 50px;
+    margin-top: 100px;
+    height: 0pxpx;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .contact-info,
+  .location,
+  .social-media {
+    flex-basis: 30%;
+  }
+  
+  .contact-info h3,
+  .location h3,
+  .social-media h3 {
+    margin-top: 0;
+  }
+  
+  .social-media ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .social-media ul li {
+    margin-bottom: 5px;
+  }
+  
+  .social-media ul li a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .social-media ul li a:hover {
+    text-decoration: underline;
+  }
+  .footerr{
+    background-position: bottom;
+  }
+
+  .header {
+    padding: 50px;
+    
+    text-align: center;
+    background: #f3efb5;
+    color: white;
+    font-size: 30px;
+  } 
